@@ -2,21 +2,20 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   grid-area: SL;
-
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: var(--tertiary);
-  padding: 11px 0;
-
+  padding: 15px 0;
   max-height: 100vh;
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const Separator = styled.div`
-  
-`;
-
-export const ServerButton = styled.div`
-  
+  width: 50px;
+  border-bottom: 2px solid var(--quaternary);
+  margin-bottom: 8px;
 `;
